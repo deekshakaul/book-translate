@@ -1,0 +1,47 @@
+{
+  "confirmed": [{
+      "term": "Mr. Bennet",
+      "category": "name",
+      "mode": "transliterate",
+      "hindi_form": "मिस्टर बेनेट",
+      "notes": ""
+    },
+    {
+      "term": "Mrs. Bennet",
+      "category": "name",
+      "mode": "transliterate",
+      "hindi_form": "मिसेज़ बेनेट",
+      "notes": ""
+    },
+    {
+      "term": "Netherfield Park",
+      "category": "place",
+      "mode": "transliterate",
+      "hindi_form": "नेदरफील्ड पार्क",
+      "notes": ""
+    },
+    {
+      "term": "Michaelmas",
+      "category": "title",
+      "mode": "keep_english",
+      "hindi_form": "",
+      "notes": "Common English address word that reads naturally in Hinglish"
+    },
+    {
+      "term": "Bingley",
+      "category": "name",
+      "mode": "transliterate",
+      "hindi_form": "बिंगलि",
+      "notes": ""
+    },
+    {
+      "term": "Dear",
+      "category": "term",
+      "mode": "transliterate",
+      "hindi_form": "डिअर",
+      "notes": ""
+    }],
+  "pending": [
+    
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "description": "GLOBAL style rules applied to every book and every translation prompt. Hand-curated by you (never auto-extracted). Edit freely; these are injected verbatim-as-instructions into the en->hi translation prompt.",
+  "target_language": "Hindi (Devanagari)",
+  "register": "Match the register of the source. Keep literary, period-appropriate tone. Preserve humor, irony, sarcasm and emotional weight over literal word-for-word accuracy.",
+  "general_rules": [
+    "Preserve paragraph breaks exactly: one source paragraph -> one target paragraph, in the same order. Do not merge or split paragraphs.",
+    "Do not add translator's notes, explanations, or commentary. Output only the translation.",
+    "Preserve emphasis, dialogue punctuation, and sentence rhythm where Hindi allows.",
+    "Prefer natural, idiomatic Hindi over heavily Sanskritized (shuddh) Hindi unless the source is formal/archaic."
+  ],
+  "honorifics": {
+    "Mr.": "Transliterate as part of the name: 'मिस्टर' (e.g. Mr. Bennet -> मिस्टर बेनेट). Do NOT translate to श्री.",
+    "Mrs.": "Transliterate as 'मिसेज़' (e.g. Mrs. Bennet -> मिसेज़ बेनेट). Do NOT translate to श्रीमती.",
+    "Miss": "Transliterate as 'मिस' (e.g. Miss Bingley -> मिस बिंगली).",
+    "Sir": "Transliterate as 'सर' when used as a title before a name."
+  },
+  "keep_english": [
+    "Dear"
+  ],
+  "keep_english_note": "Terms in keep_english are common English address/loan words to leave in Latin script inside the Hindi sentence (Hinglish / code-switch style) rather than translating. e.g. 'My dear' stays as 'मेरे Dear' rather than 'मेरे प्रिय', when used as an affectionate address.",
+  "transliteration_conventions": [
+    "Proper nouns (people, places) are transliterated phonetically into Devanagari, never translated by meaning.",
+    "Keep a name's transliteration identical every time it appears (the book glossary enforces this)."
+  ],
+  "numbers_and_dates": "Use Devanagari or Arabic numerals consistently; keep years as-is. Currency and units may stay in their English/loan form if that is how they read naturally."
+}

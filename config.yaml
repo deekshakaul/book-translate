@@ -1,0 +1,85 @@
+# book-translate configuration.
+#
+# Model choice is a CONFIG change, never a code change. Every pipeline stage
+# picks a provider (base_url + api_key) and a model name below. The pipeline is
+# built for LOCAL models now (Ollama / LM Studio); cloud providers are left as
+# commented presets you can switch to later without touching any script.
+#
+# api_key values support ${ENV_VAR} expansion, e.g. "${GROQ_API_KEY}".
+# Local servers ignore the key, so a placeholder string is fine there.
+
+providers:
+  ollama:
+    base_url: "http://localhost:11434/v1"
+    api_key: "ollama"
+  lmstudio:
+    base_url: "http://localhost:1234/v1"
+    api_key: "lmstudio"
+  groq:
+    base_url: "https://api.groq.com/openai/v1"
+    api_key: "${GROQ_API_KEY}" 
+
+  # --- Future cloud presets (all OpenAI-compatible). Uncomment + set env vars. ---
+  # groq:
+  #   base_url: "https://api.groq.com/openai/v1"
+  #   api_key: "${GROQ_API_KEY}"
+  # cerebras:
+  #   base_url: "https://api.cerebras.ai/v1"
+  #   api_key: "${CEREBRAS_API_KEY}"
+  # mistral:
+  #   base_url: "https://api.mistral.ai/v1"
+  #   api_key: "${MISTRAL_API_KEY}"
+  # openrouter:
+  #   base_url: "https://openrouter.ai/api/v1"
+  #   api_key: "${OPENROUTER_API_KEY}"
+
+# Per-stage model selection. Swap `model` (and `provider`) freely as you test.
+stages:
+  translate:
+    provider: groq
+    model: "${GROQ_QWEN_8B}"
+    temperature: 0.3
+    max_tokens: 4096
+  backtranslate:
+    # Deliberately a DIFFERENT model (different provider AND family) than
+    # `translate` so the back-translation is an independent check rather than
+    # the same model marking its own homework.
+    provider: groq
+    model: "${GROQ_QWEN_3_6_27B}"
+    temperature: 0.3
+    max_tokens: 4096
+  qa_judge:
+    provider: ollama
+    model: "${OLLAMA_NEMO}"
+    temperature: 0.5
+    max_tokens: 4096
+  extract:
+    provider: ollama
+    model: "${OLLAMA_NEMO}"
+    temperature: 0.0
+    max_tokens: 2048
+  polish:
+    provider: groq
+    model: "${GROQ_QWEN_8B}"
+    temperature: 0.0
+    max_tokens: 1024
+
+embeddings:
+  # TM retrieval: embedding model for finding similar past translations
+  tm_model: "sentence-transformers/LaBSE"
+
+  # QA measurement: method for detecting meaning loss in translation
+  # Options: "backtranslate" (current, indirect via backtranslation)
+  #          "labse" (direct EN↔HI embedding comparison)
+  qa_model: "labse"
+
+  device: "cuda"          # falls back to CPU automatically with a warning
+  tm_top_k: 3             # how many past pairs to retrieve as few-shot examples
+
+qa:
+  similarity_threshold: 0.75   # per-paragraph: below this -> ask the judge model
+  pass_band: 0.80             # chapter mean sim >= this  -> PASS
+  review_band: 0.70            # >= this (and < pass) -> REVIEW; below -> FAIL
+
+paths:
+  books_dir: "books"

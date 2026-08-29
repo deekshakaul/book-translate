@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Secrets
+.env
+
+# Per-book generated artefacts (keep source/ and reviewed glossaries if you want,
+# but drafts / qa / manifests / TM are regenerated). Comment these out if you'd
+# rather version your books' outputs.
+books/*/drafts/
+books/*/qa_reports/
+books/*/manifest.json
+
+# OS
+.DS_Store
+Thumbs.db

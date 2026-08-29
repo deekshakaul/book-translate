@@ -1,0 +1,46 @@
+n source=35 hi=34 back=74
+
+--- SRC[0] ---
+Chapter 1
+
+--- HI[0] ---
+यह एक ऐसी सच्चाई है जिसे सार्वजनिक रूप से स्वीकार किया जाता है कि एक अकेला आदमी जो अच्छी संपत्ति वाला है, उसे पत्नी की जरूरत होगी।
+
+--- BACK[0] ---
+It is a well-known truth that a single man who is fortunate will need a wife.
+
+============================================================
+
+--- SRC[1] ---
+It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
+
+--- HI[1] ---
+हालांकि ऐसे आदमी की भावनाएं या विचार उसके पहली बार किसी इलाके में आने पर उतनी ही कम जाने जाते हों, यह सच्चाई इतनी अच्छी तरह से आसपास के परिवारों के दि
+
+--- BACK[1] ---
+Although the feelings or thoughts of such a man may be just as little known in his first visit to a place, this truth has been so deeply ingrained in 
+
+============================================================
+
+--- SRC[2] ---
+However little known the feelings or views of such a man may be on his first entering a neighbourhood, this truth is so well fixed in the minds of the
+
+--- HI[2] ---
+"मेरे डियर मिस्टर बेनेट," उसकी पत्नी ने एक दिन उससे कहा, "क्या आपने सुना है कि नेदरफील्ड पार्क आखिरकार किराए पर दिया गया है?
+
+--- BACK[2] ---
+"One day, my dear Mr. Bennet," his wife said to him one day, "have you heard that Netherfield Park has finally been let on lease?"
+
+============================================================
+
+--- SRC[3] ---
+"My dear Mr. Bennet," said his lady to him one day, "have you heard that Netherfield Park is let at last?"
+
+--- HI[3] ---
+मिस्टर बेनेट ने जवाब दिया कि उन्हें नहीं सुनाया गया था।
+
+--- BACK[3] ---
+Mr. Bennet replied that they had not been informed.
+
+============================================================
+

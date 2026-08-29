@@ -1,0 +1,38 @@
+# Pride & Prejudice Translation Pipeline - Requirements
+#
+# QUICK START:
+#   1. Create virtual environment: python -m venv .venv
+#   2. Activate: source .venv/bin/activate (Linux/Mac) or .venv\Scripts\activate (Windows)
+#   3. Install: pip install -r requirements.txt
+#
+# GPU SETUP (NVIDIA only):
+#   - Check your CUDA version: nvidia-smi
+#   - If CUDA 12.1: pip install -r requirements.txt (default below)
+#   - If CUDA 11.8: Change --extra-index-url to https://download.pytorch.org/whl/cu118
+#   - If CUDA 12.4: Change --extra-index-url to https://download.pytorch.org/whl/cu124
+#   - CPU only: Remove --extra-index-url line and reinstall torch without CUDA
+#
+# See config.yaml for model selection and device settings (cuda/cpu)
+
+--extra-index-url https://download.pytorch.org/whl/cu121
+
+# Core ML & NLP
+torch==2.5.1                       # PyTorch (CUDA 12.1 by default)
+numpy==1.26.4                      # keep <2 for torch 2.5.x compatibility
+scipy==1.14.1                      # Scientific computing (for cosine similarity)
+scikit-learn==1.6.1                # ML utilities
+
+# Embeddings & Transformers
+sentence-transformers==3.3.1       # LaBSE for cross-lingual embeddings
+transformers==4.46.3               # HuggingFace models
+
+# Configuration & APIs
+pyyaml==6.0.2                      # YAML config parsing
+python-dotenv==1.0.1               # Environment variable management
+requests==2.32.3                   # HTTP library (optional, for API fallback)
+openai==1.66.1                     # OpenAI API (Groq-compatible)
+
+# Utilities
+tqdm==4.67.1                       # Progress bars
+click==8.1.7                       # CLI framework (optional)
+rich==13.9.4                       # Colored terminal output (optional)
