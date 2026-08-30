@@ -2,9 +2,14 @@
 run_pipeline.py — orchestrator for Stages 1-3 (+ optional Stage 1.5 polish).
 
 For each chapter, runs each stage FULLY before moving to the next:
-    translate (en->hi)  ->  [polish (optional)]  ->  backtranslate (hi->en)  ->  score_qa (paragraph QA)
+    translate (en->hi)  ->  [polish (optional)]  ->  [backtranslate (hi->en)]  ->  score_qa (paragraph QA)
 then moves to the next chapter. Work already marked `done` in the manifest is
 skipped, so the pipeline is resumable.
+
+backtranslate only runs when config.yaml's embeddings.qa_model == "backtranslate".
+When qa_model == "labse" (the default), score_qa compares source vs. the Hindi
+draft directly and never reads the back-translation, so running backtranslate
+in that mode would just burn an extra LLM call for output nothing uses.
 
 It deliberately does NOT run:
   - Stage 0 (extract_glossary): you review/confirm glossary entries first.
@@ -45,7 +50,9 @@ def run(book: str, chapters: list[int], force: bool = False, polish_enabled: boo
         translate.translate_chapter(book, ch, force=force)
         if polish_enabled:
             polish.polish_chapter(book, ch, force=force)
-        backtranslate.backtranslate_chapter(book, ch, force=force)
+        qa_model = c.load_config().get("embeddings", {}).get("qa_model", "backtranslate")
+        if qa_model == "backtranslate":
+            backtranslate.backtranslate_chapter(book, ch, force=force)
         report = score_qa.score_chapter(book, ch, force=force)
         results.append((ch, report.get("confidence"), report.get("mean_sim"), report.get("n_flagged")))
 

@@ -258,10 +258,6 @@ def score_chapter(book: str, ch: int, force: bool = False) -> dict:
     hi_file = bp.draft_hi_file(ch)
     if not src_file.exists():
         raise FileNotFoundError(f"Source not found: {src_file}")
-    if not back_file.exists():
-        raise FileNotFoundError(
-            f"Back-translation not found: {back_file}. Run backtranslate.py first."
-        )
 
     if bp.qa_file(ch).exists() and not force and c.get_stage_status(bp, ch, "score_qa") == "done":
         print(f"[skip] {c.chapter_id(ch)} already scored -> {bp.qa_file(ch)}")
@@ -277,6 +273,10 @@ def score_chapter(book: str, ch: int, force: bool = False) -> dict:
         print(f"[score_qa] {c.chapter_id(ch)}: LaBSE-based (EN↔HI direct comparison)")
         report = score_labse(c.read_text(src_file), c.read_text(hi_file), chapter_label=c.chapter_id(ch))
     else:
+        if not back_file.exists():
+            raise FileNotFoundError(
+                f"Back-translation not found: {back_file}. Run backtranslate.py first."
+            )
         print(f"[score_qa] {c.chapter_id(ch)}: backtranslation-based (EN→EN round-trip)")
         report = score(c.read_text(src_file), c.read_text(back_file), chapter_label=c.chapter_id(ch))
 
