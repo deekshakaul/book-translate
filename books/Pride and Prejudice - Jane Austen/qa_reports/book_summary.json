@@ -1,0 +1,30 @@
+{
+  "book": "Pride and Prejudice - Jane Austen",
+  "chapters": {
+    "ch01": {
+      "confidence": "FAIL",
+      "mean_sim": 0.3617,
+      "min_sim": -0.0881,
+      "n_flagged": 34
+    },
+    "ch02": {
+      "confidence": "FAIL",
+      "mean_sim": 0.3317,
+      "min_sim": 0.0804,
+      "n_flagged": 27
+    },
+    "ch03": {
+      "confidence": "PASS",
+      "mean_sim": 0.8649,
+      "min_sim": 0.822,
+      "n_flagged": 0
+    }
+  },
+  "totals": {
+    "chapters_scored": 3,
+    "PASS": 1,
+    "REVIEW": 0,
+    "FAIL": 2
+  },
+  "updated_at": "2026-08-29T03:44:37+00:00"
+}

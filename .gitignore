@@ -12,8 +12,7 @@ env/
 # but drafts / qa / manifests / TM are regenerated). Comment these out if you'd
 # rather version your books' outputs.
 books/*/drafts/
-books/*/qa_reports/
-books/*/manifest.json
+
 
 # OS
 .DS_Store

@@ -1,0 +1,94 @@
+{
+  "book": "Pride and Prejudice - Jane Austen",
+  "chapters": {
+    "ch01": {
+      "translate": {
+        "status": "done",
+        "ts": "2026-07-06T04:32:27+00:00",
+        "model": "llama-3.3-70b-versatile",
+        "provider": "groq",
+        "tokens": 4182,
+        "tm_examples": 0
+      },
+      "backtranslate": {
+        "status": "done",
+        "ts": "2026-07-06T04:35:22+00:00",
+        "model": "llama3.1:8b",
+        "provider": "ollama",
+        "tokens": 4399
+      },
+      "score_qa": {
+        "status": "done",
+        "ts": "2026-07-06T04:42:08+00:00",
+        "confidence": "FAIL",
+        "mean_sim": 0.3617,
+        "flagged": 34
+      },
+      "polish": {
+        "status": "done",
+        "ts": "2026-07-06T04:34:47+00:00",
+        "model": "llama3.1:8b",
+        "provider": "ollama",
+        "tokens": 7451
+      },
+      "approved": true
+    },
+    "ch02": {
+      "translate": {
+        "status": "done",
+        "ts": "2026-07-06T05:26:41+00:00",
+        "model": "llama-3.3-70b-versatile",
+        "provider": "groq",
+        "tokens": 4646,
+        "tm_examples": 3
+      },
+      "polish": {
+        "status": "done",
+        "ts": "2026-07-06T05:28:27+00:00",
+        "model": "llama3.1:8b",
+        "provider": "ollama",
+        "tokens": 6432
+      },
+      "backtranslate": {
+        "status": "done",
+        "ts": "2026-07-06T05:28:44+00:00",
+        "model": "llama3.1:8b",
+        "provider": "ollama",
+        "tokens": 3044
+      },
+      "score_qa": {
+        "status": "done",
+        "ts": "2026-07-06T05:33:26+00:00",
+        "confidence": "FAIL",
+        "mean_sim": 0.3317,
+        "flagged": 27
+      },
+      "approved": true
+    },
+    "ch03": {
+      "translate": {
+        "status": "done",
+        "ts": "2026-08-29T03:42:14+00:00",
+        "model": "qwen/qwen3.8-27b",
+        "provider": "groq",
+        "tokens": 7173,
+        "tm_examples": 3
+      },
+      "backtranslate": {
+        "status": "done",
+        "ts": "2026-08-29T03:44:29+00:00",
+        "model": "qwen/qwen3.8-27b",
+        "provider": "groq",
+        "tokens": 7966
+      },
+      "score_qa": {
+        "status": "done",
+        "ts": "2026-08-29T03:44:37+00:00",
+        "confidence": "PASS",
+        "mean_sim": 0.8649,
+        "flagged": 0
+      },
+      "approved": true
+    }
+  }
+}

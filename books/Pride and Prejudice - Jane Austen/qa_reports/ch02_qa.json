@@ -1,0 +1,259 @@
+{
+  "chapter": "ch02",
+  "qa_method": "labse",
+  "confidence": "FAIL",
+  "mean_sim": 0.3317,
+  "min_sim": 0.0804,
+  "n_paragraphs": 27,
+  "n_flagged": 27,
+  "similarity_threshold": 0.82,
+  "paragraph_count_mismatch": true,
+  "source_paragraphs": 28,
+  "hindi_paragraphs": 27,
+  "paragraphs": [
+    {
+      "idx": 0,
+      "sim": 0.0804,
+      "judged": true,
+      "verdict": "pass",
+      "tone_preserved": true,
+      "severity": "none",
+      "issue": ""
+    },
+    {
+      "idx": 1,
+      "sim": 0.2118,
+      "judged": true,
+      "verdict": "pass",
+      "tone_preserved": true,
+      "severity": "none",
+      "issue": ""
+    },
+    {
+      "idx": 2,
+      "sim": 0.5675,
+      "judged": true,
+      "verdict": "pass",
+      "tone_preserved": true,
+      "severity": "none",
+      "issue": ""
+    },
+    {
+      "idx": 3,
+      "sim": 0.4013,
+      "judged": true,
+      "verdict": "fail",
+      "tone_preserved": false,
+      "severity": "major",
+      "issue": "The back-translation loses the resentment in Mrs. Bennet's voice and also introduces an irrelevant detail about a promise by Mrs. Long."
+    },
+    {
+      "idx": 4,
+      "sim": 0.3242,
+      "judged": true,
+      "verdict": "fail",
+      "tone_preserved": false,
+      "severity": "major",
+      "issue": "The back-translation has added additional commentary ('she is a proud and deceitful woman, and I have no opinion of her') which was not present in the original passage. This changes both the meaning and tone."
+    },
+    {
+      "idx": 5,
+      "sim": 0.3536,
+      "judged": true,
+      "verdict": "pass",
+      "tone_preserved": true,
+      "severity": "none",
+      "issue": ""
+    },
+    {
+      "idx": 6,
+      "sim": 0.4912,
+      "judged": true,
+      "verdict": "pass",
+      "tone_preserved": true,
+      "severity": "none",
+      "issue": ""
+    },
+    {
+      "idx": 7,
+      "sim": 0.2677,
+      "judged": true,
+      "verdict": "pass",
+      "tone_preserved": true,
+      "severity": "none",
+      "issue": ""
+    },
+    {
+      "idx": 8,
+      "sim": 0.4155,
+      "judged": true,
+      "verdict": "fail",
+      "tone_preserved": false,
+      "severity": "major",
+      "issue": "The back-translation does not preserve the original's meaning and tone. The Hindi translation lacks the imperative 'don't keep coughing so' and the metaphorical expression 'tear them to pieces', which conveys the speaker's exasperation."
+    },
+    {
+      "idx": 9,
+      "sim": 0.5191,
+      "judged": true,
+      "verdict": "fail",
+      "tone_preserved": false,
+      "severity": "major",
+      "issue": "The back-translation misses the irony and humorous tone present in the original. The Hindi version takes it literally while the original is a playful remark."
+    },
+    {
+      "idx": 10,
+      "sim": 0.257,
+      "judged": true,
+      "verdict": "fail",
+      "tone_preserved": false,
+      "severity": "major",
+      "issue": "The back-translation does not convey Kitty's irritation or fretfulness and misses the entire second sentence about the ball."
+    },
+    {
+      "idx": 11,
+      "sim": 0.3225,
+      "judged": true,
+      "verdict": "fail",
+      "tone_preserved": false,
+      "severity": "major",
+      "issue": "The back-translation completely changed the meaning of the original English phrase from 'In two weeks' to a conversation about introducing someone, losing its literal and temporal tone."
+    },
+    {
+      "idx": 12,
+      "sim": 0.4002,
+      "judged": true,
+      "verdict": "fail",
+      "tone_preserved": false,
+      "severity": "major",
+      "issue": "The back-translation does not preserve the original meaning. It introduces new elements ('mera pyare', 'apni dost ka fayada') and misses crucial details like Mrs. Long's absence and her inability to introduce him due to this."
+    },
+    {
+      "idx": 13,
+      "sim": 0.3788,
+      "judged": true,
+      "verdict": "pass",
+      "tone_preserved": true,
+      "severity": "none",
+      "issue": ""
+    },
+    {
+      "idx": 14,
+      "sim": 0.3815,
+      "judged": true,
+      "verdict": "fail",
+      "tone_preserved": false,
+      "severity": "major",
+      "issue": "The back-translation does not preserve the original's tone of teasing. The Hindi translation is too formal and lacks the playful, light-hearted tone present in the original."
+    },
+    {
+      "idx": 15,
+      "sim": 0.1428,
+      "judged": true,
+      "verdict": "fail",
+      "tone_preserved": false,
+      "severity": "major",
+      "issue": "The back-translation completely alters the meaning of the original passage. The Hindi version does not preserve the original's tone or meaning."
+    },
+    {
+      "idx": 16,
+      "sim": 0.1833,
+      "judged": true,
+      "verdict": "pass",
+      "tone_preserved": true,
+      "severity": "none",
+      "issue": ""
+    },
+    {
+      "idx": 17,
+      "sim": 0.2919,
+      "judged": true,
+      "verdict": "fail",
+      "tone_preserved": false,
+      "severity": "major",
+      "issue": "The original tone of irony is lost in the back-translation. The Hindi version does not convey the sarcasm intended by 'For you are a young lady of deep reflection, I know, and read great books and make extracts.'"
+    },
+    {
+      "idx": 18,
+      "sim": 0.2271,
+      "judged": true,
+      "verdict": "fail",
+      "tone_preserved": false,
+      "severity": "major",
+      "issue": "The back-translation adds unnecessary words ('जब', 'तो उसने जारी रखा') and changes the original meaning to Mary merely repeating a phrase instead of expressing her intention."
+    },
+    {
+      "idx": 19,
+      "sim": 0.4581,
+      "judged": true,
+      "verdict": "fail",
+      "tone_preserved": false,
+      "severity": "major",
+      "issue": "The back-translation introduces a new character (his wife) and changes the tone to an exclamation of frustration, which is not present in the original. The original has a neutral tone."
+    },
+    {
+      "idx": 20,
+      "sim": 0.1908,
+      "judged": true,
+      "verdict": "fail",
+      "tone_preserved": false,
+      "severity": "major",
+      "issue": "The back-translation has added new information ('Why didn't you tell me earlier?') and changed the tone to a more formal, explanatory one, losing the original's abrupt, exasperated tone."
+    },
+    {
+      "idx": 21,
+      "sim": 0.4163,
+      "judged": true,
+      "verdict": "pass",
+      "tone_preserved": true,
+      "severity": "none",
+      "issue": ""
+    },
+    {
+      "idx": 22,
+      "sim": 0.3964,
+      "judged": true,
+      "verdict": "pass",
+      "tone_preserved": true,
+      "severity": "none",
+      "issue": ""
+    },
+    {
+      "idx": 23,
+      "sim": 0.474,
+      "judged": true,
+      "verdict": "fail",
+      "tone_preserved": false,
+      "severity": "major",
+      "issue": "The back-translation fails to preserve the original's tone and meaning. The original passage is a playful exchange between characters, with Mr. Bennet using humor and irony ('such a good joke'). However, the back-translation loses this tone and instead presents a straightforward statement."
+    },
+    {
+      "idx": 24,
+      "sim": 0.3341,
+      "judged": true,
+      "verdict": "fail",
+      "tone_preserved": false,
+      "severity": "major",
+      "issue": "The back-translation does not preserve the original's meaning and tone. The original is a single sentence with Mr. Bennet expressing fatigue towards his wife's raptures, while the back-translation adds additional dialogue and changes the perspective to a third-person narrative."
+    },
+    {
+      "idx": 25,
+      "sim": 0.3833,
+      "judged": true,
+      "verdict": "fail",
+      "tone_preserved": false,
+      "severity": "major",
+      "issue": "The back-translation does not preserve the meaning and tone of the original. It introduces a new dialogue for Lydia that was not present in the original, altering the flow and intent of the conversation."
+    },
+    {
+      "idx": 26,
+      "sim": 0.0845,
+      "judged": true,
+      "verdict": "pass",
+      "tone_preserved": true,
+      "severity": "none",
+      "issue": ""
+    }
+  ],
+  "scored_at": "2026-07-06T05:33:26+00:00"
+}

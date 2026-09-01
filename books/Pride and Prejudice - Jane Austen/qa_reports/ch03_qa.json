@@ -1,0 +1,121 @@
+{
+  "chapter": "ch03",
+  "qa_method": "labse",
+  "confidence": "PASS",
+  "mean_sim": 0.8649,
+  "min_sim": 0.822,
+  "n_paragraphs": 21,
+  "n_flagged": 0,
+  "similarity_threshold": 0.75,
+  "paragraph_count_mismatch": false,
+  "source_paragraphs": 21,
+  "hindi_paragraphs": 21,
+  "paragraphs": [
+    {
+      "idx": 0,
+      "sim": 0.9673,
+      "judged": false
+    },
+    {
+      "idx": 1,
+      "sim": 0.8516,
+      "judged": false
+    },
+    {
+      "idx": 2,
+      "sim": 0.8853,
+      "judged": false
+    },
+    {
+      "idx": 3,
+      "sim": 0.8528,
+      "judged": false
+    },
+    {
+      "idx": 4,
+      "sim": 0.822,
+      "judged": false
+    },
+    {
+      "idx": 5,
+      "sim": 0.8676,
+      "judged": false
+    },
+    {
+      "idx": 6,
+      "sim": 0.8652,
+      "judged": false
+    },
+    {
+      "idx": 7,
+      "sim": 0.8397,
+      "judged": false
+    },
+    {
+      "idx": 8,
+      "sim": 0.8382,
+      "judged": false
+    },
+    {
+      "idx": 9,
+      "sim": 0.8836,
+      "judged": false
+    },
+    {
+      "idx": 10,
+      "sim": 0.8511,
+      "judged": false
+    },
+    {
+      "idx": 11,
+      "sim": 0.8386,
+      "judged": false
+    },
+    {
+      "idx": 12,
+      "sim": 0.8885,
+      "judged": false
+    },
+    {
+      "idx": 13,
+      "sim": 0.8968,
+      "judged": false
+    },
+    {
+      "idx": 14,
+      "sim": 0.8477,
+      "judged": false
+    },
+    {
+      "idx": 15,
+      "sim": 0.8479,
+      "judged": false
+    },
+    {
+      "idx": 16,
+      "sim": 0.8623,
+      "judged": false
+    },
+    {
+      "idx": 17,
+      "sim": 0.8282,
+      "judged": false
+    },
+    {
+      "idx": 18,
+      "sim": 0.9298,
+      "judged": false
+    },
+    {
+      "idx": 19,
+      "sim": 0.835,
+      "judged": false
+    },
+    {
+      "idx": 20,
+      "sim": 0.8638,
+      "judged": false
+    }
+  ],
+  "scored_at": "2026-08-29T03:44:37+00:00"
+}

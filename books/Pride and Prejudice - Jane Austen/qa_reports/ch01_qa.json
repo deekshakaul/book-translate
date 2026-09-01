@@ -1,0 +1,322 @@
+{
+  "chapter": "ch01",
+  "qa_method": "labse",
+  "confidence": "FAIL",
+  "mean_sim": 0.3617,
+  "min_sim": -0.0881,
+  "n_paragraphs": 34,
+  "n_flagged": 34,
+  "similarity_threshold": 0.82,
+  "paragraph_count_mismatch": true,
+  "source_paragraphs": 35,
+  "hindi_paragraphs": 34,
+  "paragraphs": [
+    {
+      "idx": 0,
+      "sim": 0.2476,
+      "judged": true,
+      "verdict": "pass",
+      "tone_preserved": true,
+      "severity": "none",
+      "issue": ""
+    },
+    {
+      "idx": 1,
+      "sim": 0.304,
+      "judged": true,
+      "verdict": "pass",
+      "tone_preserved": true,
+      "severity": "none",
+      "issue": ""
+    },
+    {
+      "idx": 2,
+      "sim": 0.2654,
+      "judged": true,
+      "verdict": "pass",
+      "tone_preserved": true,
+      "severity": "none",
+      "issue": ""
+    },
+    {
+      "idx": 3,
+      "sim": 0.4982,
+      "judged": true,
+      "verdict": "pass",
+      "tone_preserved": true,
+      "severity": "none",
+      "issue": ""
+    },
+    {
+      "idx": 4,
+      "sim": 0.3733,
+      "judged": true,
+      "verdict": "fail",
+      "tone_preserved": false,
+      "severity": "major",
+      "issue": "The back-translation introduces unnecessary details ('Mrs. Long had been here and told me everything about it') that change the meaning and tone of the original."
+    },
+    {
+      "idx": 5,
+      "sim": 0.343,
+      "judged": true,
+      "verdict": "pass",
+      "tone_preserved": true,
+      "severity": "none",
+      "issue": ""
+    },
+    {
+      "idx": 6,
+      "sim": 0.3127,
+      "judged": true,
+      "verdict": "pass",
+      "tone_preserved": true,
+      "severity": "none",
+      "issue": ""
+    },
+    {
+      "idx": 7,
+      "sim": 0.3904,
+      "judged": true,
+      "verdict": "fail",
+      "tone_preserved": false,
+      "severity": "major",
+      "issue": "The Hindi translation misses the impatient tone of the original. The use of 'आपत्ति' (apatti) does not convey impatience but rather indicates a lack of trouble or concern."
+    },
+    {
+      "idx": 8,
+      "sim": 0.2121,
+      "judged": true,
+      "verdict": "pass",
+      "tone_preserved": true,
+      "severity": "none",
+      "issue": ""
+    },
+    {
+      "idx": 9,
+      "sim": 0.2067,
+      "judged": true,
+      "verdict": "pass",
+      "tone_preserved": true,
+      "severity": "none",
+      "issue": ""
+    },
+    {
+      "idx": 10,
+      "sim": 0.226,
+      "judged": true,
+      "verdict": "fail",
+      "tone_preserved": false,
+      "severity": "major",
+      "issue": "The back-translation does not preserve the original's meaning or tone. The original passage is a narrative in which Mrs. Long informs the speaker about a new tenant at Netherfield. However, the back-translation seems to be asking for someone's name, which completely changes the meaning and tone of the original passage."
+    },
+    {
+      "idx": 11,
+      "sim": 0.416,
+      "judged": true,
+      "verdict": "fail",
+      "tone_preserved": false,
+      "severity": "major",
+      "issue": "The back-translation 'बिंग्ली!' is not a valid translation of 'What is his name?' and does not preserve the original meaning."
+    },
+    {
+      "idx": 12,
+      "sim": 0.3451,
+      "judged": true,
+      "verdict": "fail",
+      "tone_preserved": false,
+      "severity": "major",
+      "issue": "The back-translation does not preserve the original's meaning. 'Bingley' is a proper noun and should not be translated literally."
+    },
+    {
+      "idx": 13,
+      "sim": 0.4115,
+      "judged": true,
+      "verdict": "fail",
+      "tone_preserved": false,
+      "severity": "major",
+      "issue": "The back-translation introduces humor and exaggeration ('a very lucky bachelor', 'how wonderful this will be for our daughters!') that is not present in the original, altering both meaning and tone."
+    },
+    {
+      "idx": 14,
+      "sim": 0.3078,
+      "judged": true,
+      "verdict": "fail",
+      "tone_preserved": false,
+      "severity": "major",
+      "issue": "The back-translation does not capture the original's tone of excitement and approval. The Hindi translation asks 'What could this possibly mean?' instead of expressing enthusiasm about the large fortune."
+    },
+    {
+      "idx": 15,
+      "sim": 0.4097,
+      "judged": true,
+      "verdict": "fail",
+      "tone_preserved": false,
+      "severity": "major",
+      "issue": "The back-translation does not preserve the original's meaning or tone. It introduces an unnecessary dialogue from a spouse and changes the simple question to a complex statement."
+    },
+    {
+      "idx": 16,
+      "sim": 0.3495,
+      "judged": true,
+      "verdict": "fail",
+      "tone_preserved": false,
+      "severity": "major",
+      "issue": "The back-translation loses the meaning of 'marrying one of them' and the tone of exasperation in Mrs. Bennet's speech."
+    },
+    {
+      "idx": 17,
+      "sim": 0.4034,
+      "judged": true,
+      "verdict": "fail",
+      "tone_preserved": false,
+      "severity": "major",
+      "issue": "The back-translation introduces additional content and changes the tone to overly emotional and informal, losing the original's interrogative and slightly skeptical tone."
+    },
+    {
+      "idx": 18,
+      "sim": 0.4711,
+      "judged": true,
+      "verdict": "fail",
+      "tone_preserved": false,
+      "severity": "major",
+      "issue": "The back-translation has introduced a new context and changed the meaning entirely. It adds unnecessary details about the appearance of 'ladkian' (girls) and introduces 'Mr. Binglee', which are not present in the original passage."
+    },
+    {
+      "idx": 19,
+      "sim": 0.507,
+      "judged": true,
+      "verdict": "fail",
+      "tone_preserved": false,
+      "severity": "major",
+      "issue": "The back-translation has lost the original's meaning and tone. It accuses the recipient of being conceited and loses the humor and irony present in the original."
+    },
+    {
+      "idx": 20,
+      "sim": 0.4348,
+      "judged": true,
+      "verdict": "pass",
+      "tone_preserved": true,
+      "severity": "none",
+      "issue": ""
+    },
+    {
+      "idx": 21,
+      "sim": 0.4007,
+      "judged": true,
+      "verdict": "fail",
+      "tone_preserved": false,
+      "severity": "major",
+      "issue": "The back-translation does not preserve the original meaning or tone. The original is a witty remark about beauty standards, while the translation directs to look for Mr. Bingle."
+    },
+    {
+      "idx": 22,
+      "sim": 0.2496,
+      "judged": true,
+      "verdict": "fail",
+      "tone_preserved": false,
+      "severity": "major",
+      "issue": "The original sentence is a polite suggestion with a touch of familiarity ('my dear'), while the back-translation is a firm refusal ('नहीं हूँ'). The tone and meaning are significantly altered."
+    },
+    {
+      "idx": 23,
+      "sim": 0.3261,
+      "judged": true,
+      "verdict": "fail",
+      "tone_preserved": false,
+      "severity": "major",
+      "issue": "The back-translation does not preserve the original's meaning. It introduces new content and loses the original's concise and assured tone."
+    },
+    {
+      "idx": 24,
+      "sim": 0.5075,
+      "judged": true,
+      "verdict": "fail",
+      "tone_preserved": false,
+      "severity": "major",
+      "issue": "The back-translation fails to preserve the original's meaning and tone. It introduces new content about Mr. Bingley's happiness and Elizabeth's sister, which is not present in the original passage."
+    },
+    {
+      "idx": 25,
+      "sim": 0.4595,
+      "judged": true,
+      "verdict": "pass",
+      "tone_preserved": true,
+      "severity": "none",
+      "issue": ""
+    },
+    {
+      "idx": 26,
+      "sim": 0.6164,
+      "judged": true,
+      "verdict": "pass",
+      "tone_preserved": true,
+      "severity": "none",
+      "issue": ""
+    },
+    {
+      "idx": 27,
+      "sim": 0.3952,
+      "judged": true,
+      "verdict": "fail",
+      "tone_preserved": false,
+      "severity": "major",
+      "issue": "The back-translation has completely changed the meaning of the original passage and introduced an aggressive tone, misrepresenting the original's mild criticism."
+    },
+    {
+      "idx": 28,
+      "sim": 0.3817,
+      "judged": true,
+      "verdict": "fail",
+      "tone_preserved": false,
+      "severity": "major",
+      "issue": "The back-translation has lost the sarcastic tone of the original. The phrase 'You take delight in vexing me' is not preserved, and the overall sentiment is changed from sarcasm to genuine concern."
+    },
+    {
+      "idx": 29,
+      "sim": 0.3762,
+      "judged": true,
+      "verdict": "fail",
+      "tone_preserved": false,
+      "severity": "major",
+      "issue": "The back-translation does not preserve the original's meaning or tone. It lacks the sarcastic undertones present in the original."
+    },
+    {
+      "idx": 30,
+      "sim": 0.3525,
+      "judged": true,
+      "verdict": "fail",
+      "tone_preserved": false,
+      "severity": "major",
+      "issue": "The back-translation introduces additional information about 'many young men' and their earnings, which is not present in the original. The original's tone of despair or suffering is lost."
+    },
+    {
+      "idx": 31,
+      "sim": 0.4545,
+      "judged": true,
+      "verdict": "fail",
+      "tone_preserved": false,
+      "severity": "major",
+      "issue": "The back-translation loses the original's ironic tone and changes the meaning to 'this will not benefit us if twenty such people come, because you won't be able to see them.' The original's humorous reference to the young men being of four thousand a year is also lost."
+    },
+    {
+      "idx": 32,
+      "sim": 0.4299,
+      "judged": true,
+      "verdict": "fail",
+      "tone_preserved": false,
+      "severity": "major",
+      "issue": "The back-translation does not convey the original meaning and tone. The original passage expresses frustration or resignation with 'you will not visit them', but the translation does not capture this nuance."
+    },
+    {
+      "idx": 33,
+      "sim": -0.0881,
+      "judged": true,
+      "verdict": "pass",
+      "tone_preserved": true,
+      "severity": "none",
+      "issue": ""
+    }
+  ],
+  "scored_at": "2026-07-06T04:42:08+00:00"
+}
